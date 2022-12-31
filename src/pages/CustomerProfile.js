@@ -75,7 +75,7 @@ const CustomerProfile = () => {
           <div className="flex mx-4 my-4 p-2 rounded items-center border border-solid">
             <p className="font-bold text-lg">Name:</p>
             <div className="flex w-full justify-end">
-              <p className="font-light whitespace-nowrap xs:text-sm">
+              <p className="font-light whitespace-nowrap xs:text-sm text-end">
                 {customer[0].name}
               </p>
             </div>
@@ -83,7 +83,7 @@ const CustomerProfile = () => {
           <div className="flex mx-4 my-4 p-2 rounded items-center border border-solid">
             <p className="font-bold text-lg">DOB:</p>
             <div className="flex w-full justify-end">
-              <p className="font-light whitespace-nowrap xs:text-sm ">
+              <p className="font-light whitespace-nowrap xs:text-sm text-end">
                 {customer[0].dob}
               </p>
             </div>
@@ -91,15 +91,17 @@ const CustomerProfile = () => {
           <div className="flex mx-4 my-4 p-2 rounded items-center border border-solid">
             <p className="font-bold text-lg">Phone:</p>
             <div className="flex w-full justify-end">
-              <p className="font-light whitespace-nowrap xs:text-sm">
+              <p className="font-light whitespace-nowrap xs:text-sm text-end">
                 {customer[0].phone}
               </p>
             </div>
           </div>
           <div className="flex mx-4 my-4 p-2 rounded items-center border border-solid">
             <p className="font-bold text-lg">Address:</p>
-            <div className="flex w-full justify-end">
-              <p className="font-light xs:text-sm">{customer[0].address}</p>
+            <div className="flex w-full justify-end xs:justify-end">
+              <p className="font-light xs:text-sm text-end">
+                {customer[0].address}
+              </p>
             </div>
           </div>
         </div>
