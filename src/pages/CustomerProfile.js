@@ -70,35 +70,41 @@ const CustomerProfile = () => {
           </p>
         </div>
       </div>
-      <div className="border border-solid p-4 rounded-lg flex">
-        <div className="flex items-center">
-          <img src={pfp} alt="" />
-        </div>
-        <div className="flex flex-col ml-8  w-full">
+      <div className="flex border border-solid p-4 rounded-lg flex">
+        {/* <div className="flex items-center">
+          <img src={pfp} alt="" width="300" height="200" />
+        </div> */}
+        <div className="flex flex-col w-full">
           <div className="flex mx-4 my-4 p-2 rounded items-center border border-solid">
             <p className="font-bold text-lg">Name:</p>
             <div className="flex w-full justify-end">
-              <p className="font-light ml-[100px]">{customer[0].name}</p>
+              <p className="font-light whitespace-nowrap xs:text-sm">
+                {customer[0].name}
+              </p>
             </div>
           </div>
           <div className="flex mx-4 my-4 p-2 rounded items-center border border-solid">
-            <p className="font-bold text-lg whitespace-nowrap">
-              Date of Birth:
-            </p>
+            <p className="font-bold text-lg">DOB:</p>
             <div className="flex w-full justify-end">
-              <p className="font-light ml-[100px]">{customer[0].dob}</p>
+              <p className="font-light whitespace-nowrap xs:text-sm ">
+                {customer[0].dob}
+              </p>
             </div>
           </div>
           <div className="flex mx-4 my-4 p-2 rounded items-center border border-solid">
             <p className="font-bold text-lg">Phone:</p>
             <div className="flex w-full justify-end">
-              <p className="font-light ml-[100px]">{customer[0].phone}</p>
+              <p className="font-light whitespace-nowrap xs:text-sm">
+                {customer[0].phone}
+              </p>
             </div>
           </div>
           <div className="flex mx-4 my-4 p-2 rounded items-center border border-solid">
             <p className="font-bold text-lg">Address:</p>
             <div className="flex w-full justify-end">
-              <p className="font-light ml-[100px]">{customer[0].address}</p>
+              <p className="font-light whitespace-nowrap xs:text-sm">
+                {customer[0].address}
+              </p>
             </div>
           </div>
         </div>

@@ -73,7 +73,11 @@ const Customers = () => {
       </div>
       <div className=" pt-8 ">
         <div className=" flex justify-between content-center mb-8">
-          <p className="font-extrabold text-orange-600 text-2xl">Buff Loans</p>
+          <Link to={"/"}>
+            <p className="font-extrabold text-orange-600 text-2xl">
+              Buff Loans
+            </p>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col">
