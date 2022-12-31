@@ -71,9 +71,6 @@ const CustomerProfile = () => {
         </div>
       </div>
       <div className="flex border border-solid p-4 rounded-lg flex">
-        {/* <div className="flex items-center">
-          <img src={pfp} alt="" width="300" height="200" />
-        </div> */}
         <div className="flex flex-col w-full">
           <div className="flex mx-4 my-4 p-2 rounded items-center border border-solid">
             <p className="font-bold text-lg">Name:</p>
@@ -109,7 +106,6 @@ const CustomerProfile = () => {
           </div>
         </div>
       </div>
-      {/* {isLoading ? <Loader /> : ""} */}
       <div className="mt-8">
         <p className="font-bold">Loans Applied</p>
         <div className="mt-4">
