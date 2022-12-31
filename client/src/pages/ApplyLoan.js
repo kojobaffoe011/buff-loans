@@ -9,9 +9,10 @@ import { Link } from "react-router-dom";
 import back from "../assets/back.svg";
 import Modal from "../components/Modal";
 import { showErrorToast, showSuccessToast } from "../components/Toast";
+import Loader from "../components/Loader";
 
 const fetchLoans = () => {
-  return axios("http://localhost:8888/loans");
+  return axios("https://buff-loans.herokuapp.com/loans");
 };
 
 const ApplyLoan = () => {
@@ -35,11 +36,7 @@ const ApplyLoan = () => {
 
   const renderContent = () => {
     if (isLoading) {
-      return (
-        <div>
-          <p>Please exercise some patience</p>
-        </div>
-      );
+      return <Loader />;
     }
     return loans.map((loan, index) => {
       return <option key={index}>{loan.name}</option>;
@@ -242,6 +239,8 @@ const ApplyLoan = () => {
                 )}
               </div>
             </div>
+            {isSubmitted ? <Loader /> : ""}
+
             <div className="flex flex-col max-w-lg mx-auto">
               <button className="border rounded-lg w-full py-4 px-4 mb-8 mt-8 bg-orange-600 leading-tight hover:bg-orange-500">
                 <p className="text-gray-50">Submit</p>

@@ -10,8 +10,12 @@ const fetchLoans = () => {
 };
 
 const HomePage = () => {
-  const [loans, setLoans] = useState([]);
+  const [loans, setLoans] = useState([
+    { name: "POWER", amount: "10000", interest: "10" },
+  ]);
   const [isLoading, setIsLoading] = useState(true);
+
+  console.log(loans);
 
   useEffect(() => {
     fetchLoans()

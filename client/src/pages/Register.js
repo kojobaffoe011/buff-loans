@@ -260,12 +260,13 @@ const Register = () => {
                 )}
               </div>
             </div>
+            {isSubmitted ? <Loader /> : ""}
             <div className="flex flex-col max-w-lg mx-auto">
               <button
                 className="border rounded-lg w-full py-4 px-4 mb-8 mt-12 bg-orange-600 leading-tight hover:bg-orange-500"
                 type="submit"
               >
-                {isSubmitted ? "..." : <p className="text-gray-50">Register</p>}
+                <p className="text-gray-50">Register</p>
               </button>
             </div>
           </form>

@@ -7,7 +7,7 @@ export const LoanSchema = yup.object().shape({
     .oneOf(
       [
         "Business Loan",
-        "Afrifa Loans",
+        "Afrifanom Loans",
         "Abanaa Loans",
         "Olale Loans",
         "Car Loan",

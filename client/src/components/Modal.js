@@ -20,11 +20,11 @@ const Modal = ({ setIsModalOpen }, props) => {
               <Title>Successful</Title>
               <p>Press Close and proceed</p>
             </Text>
-            {/* <Link to="/"> */}
-            <button onClick={() => setIsModalOpen(false)} type="button">
-              Close
-            </button>
-            {/* </Link> */}
+            <Link to="/">
+              <button onClick={() => setIsModalOpen(false)} type="button">
+                Close
+              </button>
+            </Link>
           </ContentContainer>
         </ModalContainer>
       </Centered>
